@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K Vamshikrishna | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        header { background: rgba(30, 41, 59, 0.8); backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 100; border-bottom: 1px solid #334155; }
+        .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; padding: 1rem 2rem; align-items: center; }
+        .logo { font-weight: bold; font-size: 1.4rem; color: var(--accent-color); letter-spacing: 0.5px; }
+        .nav-links a { color: var(--text-main); text-decoration: none; margin-left: 1.5rem; transition: color 0.3s; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--accent-color); }
+        section { max-width: 1100px; margin: 0 auto; padding: 6rem 2rem 3rem 2rem; }
+        .hero { display: flex; align-items: center; justify-content: space-between; min-height: 75vh; gap: 2rem; }
+        .hero-text h1 { font-size: 3.5rem; margin-bottom: 0.5rem; font-weight: 800; }
+        .hero-text h1 span { color: var(--accent-color); }
+        .hero-text h2 { font-size: 1.4rem; color: var(--text-muted); margin-bottom: 1.5rem; font-weight: 500; }
+        .badge-uni { display: inline-block; background: rgba(56, 189, 248, 0.1); color: var(--accent-color); padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 1.5rem; border: 1px solid rgba(56, 189, 248, 0.2); }
+        .btn { display: inline-block; background: var(--accent-color); color: var(--bg-color); padding: 0.75rem 1.5rem; font-weight: bold; border-radius: 6px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(56, 189, 248, 0.2); }
+        h2.section-title { font-size: 2rem; margin-bottom: 0.5rem; position: relative; padding-bottom: 0.5rem; }
+        h2.section-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 50px; height: 3px; background: var(--accent-color); border-radius: 2px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
+        .card { background: var(--card-bg); padding: 2rem; border-radius: 8px; border: 1px solid #334155; transition: border-color 0.3s, transform 0.3s; display: flex; flex-direction: column; justify-content: space-between; }
+        .card:hover { border-color: var(--accent-color); transform: translateY(-2px); }
+        .card h3 { color: var(--accent-color); margin-bottom: 0.75rem; font-size: 1.25rem; }
+        .card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        .skills-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
+        .tag { background: #1e293b; border: 1px solid #334155; color: #e2e8f0; padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; }
+        .card:hover .tag { border-color: rgba(56, 189, 248, 0.3); }
+        footer { text-align: center; padding: 3rem; border-top: 1px solid #334155; margin-top: 5rem; color: var(--text-muted); font-size: 0.9rem; }
+        @media (max-width: 768px) { .hero { flex-direction: column; text-align: center; min-height: auto; padding-top: 8rem; } .hero-text h1 { font-size: 2.5rem; } .hero-text h2 { font-size: 1.2rem; } h2.section-title::after { left: 50%; transform: translateX(-50%); } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">KV.dev</div>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="hero">
+        <div class="hero-text">
+            <div class="badge-uni">REVA University &bull; CSIT (2nd Sem)</div>
+            <h1>Hi, I am <span>K Vamshikrishna</span></h1>
+            <h2>Computer Science & Information Technology Student</h2>
+            <p style="max-width: 650px; color: var(--text-muted); margin-bottom: 2rem; font-size: 1.05rem;">
+                Focused on solving algorithmic challenges and engineering connected solutions. Specialized in core Data Structures & Algorithms, machine learning workflows, and hardware automation systems.
+            </p>
+            <a href="#projects" class="btn">Explore Projects</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>Languages & Core</h3>
+                    <p>Building optimized problem-solving logic and handling memory execution patterns efficiently.</p>
+                </div>
+                <div class="skills-tags">
+                    <span class="tag">Data Structures (DSA)</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">C</span>
+                    <span class="tag">Python</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Data Science & ML</h3>
+                    <p>Manipulating dataset arrays, statistical modeling pipelines, and generating analytical predictive distributions.</p>
+                </div>
+                <div class="skills-tags">
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">Scikit-Learn</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Hardware & Systems</h3>
+                    <p>Prototyping automated embedded electronics setups using local networks and microcontrollers.</p>
+                </div>
+                <div class="skills-tags">
+                    <span class="tag">NodeMCU</span>
+                    <span class="tag">IoT Solutions</span>
+                    <span class="tag">Git / GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Featured Work</h2>
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>WiFi-Controlled Car Setup</h3>
+                    <p>An integrated hardware configuration utilizing a NodeMCU microcontroller framework to process wireless incoming operational inputs, translating commands over local communication lines directly to motor driver relays.</p>
+                </div>
+                <div class="skills-tags">
+                    <span class="tag">NodeMCU</span>
+                    <span class="tag">IoT</span>
+                    <span class="tag">Embedded Systems</span>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Stock Market Predictive Model</h3>
+                    <p>An analytics pipeline applying supervised predictive models to process dynamic historical asset pricing arrays. Utilizes automated matrix preprocessing to forecast trends over multi-variant tracking frames.</p>
+                </div>
+                <div class="skills-tags">
+                    <span class="tag">Scikit-Learn</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Data Analytics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 K Vamshikrishna. All rights reserved.</p>
+    </footer>
+</body>
+</html>
