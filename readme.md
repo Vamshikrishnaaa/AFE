@@ -6,4 +6,4 @@ https://vamshikrishnaaa.github.io/AFE/profile.html
 newsweb.html -> Contains the code for news website built using html, Here's the link for the deployed website -> 
 https://vamshikrishnaaa.github.io/AFE/newsweb.html
 
-AFE.pptx -> contains the presention slides for the project
+AFEppt.pptx -> contains the presention slides for the project
